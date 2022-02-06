@@ -8,8 +8,8 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6 d-flex align-items-center">
-                        <h1 class="m-0 mr-2">{{$category->title}}</h1>
-                        <a href="{{route('admin.category.edit',$category->id)}}" class="text-success" > <i class="fas fa-pen"></i></a>
+                        <h1 class="m-0 mr-2">{{$post->title}}</h1>
+                        <a href="{{route('admin.post.edit',$post->id)}}" class="text-success" > <i class="fas fa-pen"></i></a>
 
                     </div><!-- /.col -->
                     <div class="col-sm-6">
@@ -36,11 +36,15 @@
                                     <tbody>
                                     <tr>
                                         <td>Id</td>
-                                        <td>{{$category->id}}</td>
+                                        <td>{{$post->id}}</td>
                                     </tr>
                                     <tr>
                                         <td>Title</td>
-                                        <td>{{$category->title}}</td>
+                                        <td>{{$post->title}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Content</td>
+                                        <td>{{$post->content}}</td>
                                     </tr>
 
                                     </tbody>
