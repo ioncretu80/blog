@@ -28,11 +28,11 @@
             <!-- Small boxes (Stat box) -->
             <div class="row">
                 <div class="col-12">
-                    <form action="{{route('admin.category.update',$category->id)}}" method="POST" class="w-25"  >
+                    <form action="{{route('admin.category.update',$category->id)}}" method="POST" class="w-50">
                         @csrf
                         @method('PATCH')
                         <div class="form-group">
-                            <input type="text" class="form-control"  name="title" placeholder="Title" value="{{$category->title}}">
+                            <input type="text"  name="title" placeholder="Title" value="{{$category->title}}">
                             @error('title')
                             <div class="text-danger">Acest camp trebuie completat</div>
                             @enderror
